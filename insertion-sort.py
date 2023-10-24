@@ -3,7 +3,7 @@ def insertionSort(a_list):
   for i in range(1, len(a_list)):
     while a_list[i] < a_list[i-1] and i > 0:
       a_list[i], a_list[i-1] = a_list[i-1], a_list[i]
-      a -= 1
+      i -= 1
   print(f"Sorted list: {a_list}")
 
 
